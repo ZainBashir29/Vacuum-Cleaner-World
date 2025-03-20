@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>596</width>
+    <height>575</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Agent</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>agent.ico</normaloff>agent.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="10">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="selectMapButton">
+      <property name="text">
+       <string>Select map</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="doOneStepButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Do one step</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="doOneRunButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Do one run</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="nextRunButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Next run</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="doAllRunsButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Do all runs</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QPushButton" name="quitButton">
+      <property name="text">
+       <string>Quit</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Stats</string>
+      </property>
+      <widget class="QLabel" name="statsLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>591</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Map not loaded...</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>130</width>
+        <height>130</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>130</width>
+        <height>130</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Display options</string>
+      </property>
+      <widget class="QLineEdit" name="stepsEdit">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>51</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="stepsLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>19</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Steps:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="timeEdit">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>51</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>200</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="timeLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="displayButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>97</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Display</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>selectMapButton</tabstop>
+  <tabstop>doOneStepButton</tabstop>
+  <tabstop>doOneRunButton</tabstop>
+  <tabstop>nextRunButton</tabstop>
+  <tabstop>doAllRunsButton</tabstop>
+  <tabstop>stepsEdit</tabstop>
+  <tabstop>timeEdit</tabstop>
+  <tabstop>displayButton</tabstop>
+  <tabstop>quitButton</tabstop>
+  <tabstop>graphicsView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
